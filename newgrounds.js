@@ -41,6 +41,12 @@ function newgroundsPlugin(k) {
 
             ngCall('ScoreBoard.getScores',  {id:board.id, user, social, skip, limit}, 0);
         },
+
+        ngUsername() {
+            const session = ngCall('App.checkSession');
+
+            return session?.result?.data?.session?.user?.name;
+        },
     
         ngCall(component, parameters=0, async=1) {
             const call = ngEncryptCall({component, parameters});

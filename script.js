@@ -11,3 +11,4 @@ ngInit("52924:fdddr5yP", "oEZ7GGD79Wht9upZ4HH7Dw==", 1);
 ngUnlockMedal(65022);
 ngPostScore(10739, 1234);
 
+console.log(ngUsername());

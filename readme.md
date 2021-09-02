@@ -60,6 +60,10 @@ We will use the `ngPostScore("Board ID in Number", "score")` function
 ngPostScore(10739, 1234);
 ```
 
+### Other functions
+
+`ngUsername()`: returns a String with the newgrounds username of the player 
+
 ## Special
 If you create a game using this api, let me know in an issue and I will put the newgrounds link as a demo, thank you!
 
