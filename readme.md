@@ -70,4 +70,4 @@ If you create a game using this api, let me know in an issue and I will put the 
 ## Thanks to
 
 * [Kaboom](https://github.com/replit/kaboom), the way to make games **fun** and **fast** <br>
-* [KilledByAPixel Newgrounds API](https://github.com/KilledByAPixel/newgrounds)
+* [KilledByAPixel Newgrounds.io Wrapper](https://github.com/KilledByAPixel/newgrounds) 
