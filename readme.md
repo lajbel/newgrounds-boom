@@ -45,5 +45,5 @@ ngPostScore(10739, 1234);
 
 ## Thanks to
 
-Kaboom <br>
-KilledByAPixel Newgrounds API
+* [Kaboom](), the way to make games **fun** and **fast** <br>
+* KilledByAPixel Newgrounds API
