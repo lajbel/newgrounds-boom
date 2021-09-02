@@ -42,7 +42,7 @@ function newgroundsPlugin(k) {
         },
     
         ngCall(component, parameters=0, async=1) {
-            const call = this.EncryptCall({component, parameters});
+            const call = this.ngEncryptCall({component, parameters});
 
             const input = {
                 app_id: this.app_id,
