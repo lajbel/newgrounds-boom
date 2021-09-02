@@ -60,7 +60,7 @@ We will use the `ngPostScore("Board ID in Number", "score")` function
 ngPostScore(10739, 1234);
 ```
 
-## Scores
+## Special
 If you create a game using this api, let me know in an issue and I will put the newgrounds link as a demo, thank you!
 
 ## Thanks to
