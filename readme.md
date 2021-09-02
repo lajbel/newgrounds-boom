@@ -19,7 +19,7 @@ With this [Kaboom](https://github.com/replit/kaboom) plugin you can use medals a
 ```.js
 ```
 
-## Credits 
+## Thanks to
 
 Kaboom <br>
 KilledByAPixel Newgrounds API
