@@ -3,7 +3,6 @@ function newgroundsPlugin(k) {
         ngInit(app_id, cipher = 0, debug = 0) {
             this.app_id = app_id;
             this.cipher = cipher;       
-            this.points = [5, 10, 25, 50, 100];
             this.debug = debug;
             
             const url = new URL(window.location.href);
