@@ -21,14 +21,26 @@ ngInit("52924:fdddr5yP", "oEZ7GGD79Wht9upZ4HH7Dw==");
 
 ### Unlock Medals 
 
+Once you have done the previous step, you can use the scores and medals. Let's see the medals, for that you must first have a medal, duh
+
+![](https://imgur.com/VwzxtXn.png)
+
+We will use the `ngUnlockMedal("Medal ID in Number")` function
+
 ```.js
-ngUnlockMedal("Medal Id in Number");
+ngUnlockMedal(65022);
 ```
 
 ### Post Scores
 
+Now, to use the scoreboards, again, we have to have a scoreboard **duh**
+
+![](https://imgur.com/ySpdtn3.png)
+
+We will use the `ngPostScore("Board ID in Number", "score")` function
+
 ```.js
-ngPostScore("Board id in Number", "Score for post in Number");
+ngPostScore(10739, 1234);
 ```
 
 ## Thanks to
