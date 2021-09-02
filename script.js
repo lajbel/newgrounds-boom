@@ -6,8 +6,8 @@ const k = kaboom({
     plugins: [ newgroundsPlugin ],
 });
 
-ngInit("52815:clVOhghn", "TxN/mOLnon6x8R7Uhj8LLQ==", 1);
+ngInit("52924:fdddr5yP", "oEZ7GGD79Wht9upZ4HH7Dw==", 1);
 
-ngUnlockMedal(0)
+ngUnlockMedal(65022);
+ngPostScore(10739, 1234);
 
-console.log(k.medals)

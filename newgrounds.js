@@ -15,28 +15,29 @@ function newgroundsPlugin(k) {
             k.medals = resultMedals?.result?.data?.medals ?? [];
         },
 
-        ngUnlockMedal(index) {
-            if(!k.medals || !k.medals[index]) return;
+        ngUnlockMedal(id) {
+            if(!k.medals || !k.medals.find(m => m.id == id)) return;
         
-            const medal = k.medals[index];
+            const medal = k.medals.find(m => m.id == id);
+            
             if(medal.unlocked) return;  
             medal.unlocked = true;
 
             ngCall('Medal.unlock', {id:medal.id});
         },
 
-        ngPostScore(index, value) {
-            if(!k.scoreboards || !k.scoreboards[index]) return;
+        ngPostScore(id, value) {
+            if(!k.scoreboards || !k.scoreboards.find(b => b.id == id)) return;
             
-            const board = k.scoreboards[index];
+            const board = k.scoreboards.find(b => b.id == id);
 
             ngCall('ScoreBoard.postScore', {id:board.id, value});
         },
 
-        ngGetScores(index, user=0, social=0, skip=0, limit=10) {
-            if(!k.scoreboards || !k.scoreboards[index]) return;
+        ngGetScores(id, user=0, social=0, skip=0, limit=10) {
+            if(!k.scoreboards || !k.scoreboards.find(b => b.id == id)) return;
             
-            const board = k.scoreboards[index];
+            const board = !k.scoreboards.find(b => b.id == id);
 
             ngCall('ScoreBoard.getScores',  {id:board.id, user, social, skip, limit}, 0);
         },

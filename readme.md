@@ -2,6 +2,23 @@
 
 With this [Kaboom](https://github.com/replit/kaboom) plugin you can use medals and post scores on [Newgrounds.com](https://newgrounds.com)
 
+## Quick example 
+
+```.js
+import { newgroundsPlugin } from "https://cdn.jsdelivr.net/gh/lajbel/newgrounds-boom@master/newgrounds.js";
+
+const k = kaboom({
+    width: 500,
+    height: 500,
+    plugins: [ newgroundsPlugin ],
+});
+
+ngInit("52924:fdddr5yP", "oEZ7GGD79Wht9upZ4HH7Dw==", 1);
+
+ngUnlockMedal(65022);
+ngPostScore(10739, 1234);
+```
+
 ## How to use 
 
 ### Init
@@ -42,6 +59,9 @@ We will use the `ngPostScore("Board ID in Number", "score")` function
 ```.js
 ngPostScore(10739, 1234);
 ```
+
+## Scores
+If you create a game using this api, let me know in an issue and I will put the newgrounds link as a demo, thank you!
 
 ## Thanks to
 
