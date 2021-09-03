@@ -17,7 +17,15 @@ add([
     pos(width() / 2, height() / 2)
 ]);
 
+keyPress("space", () => {
+    add([
+        text(String(ngVersion()), {size: 30}),
+        origin("center"),
+        pos(width() / 2, height() - 80)
+    ]);
+});
+ 
 mouseClick(() => {
     ngUnlockMedal(65022);
-    ngPostScore(10739, rand(0, 9999).toString();
+    ngPostScore(10739, rand(0, 9999).toString());
 });

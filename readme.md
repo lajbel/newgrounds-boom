@@ -24,9 +24,17 @@ add([
     pos(width() / 2, height() / 2)
 ]);
 
+keyPress("space", () => {
+    add([
+        text(String(ngVersion()), {size: 30}),
+        origin("center"),
+        pos(width() / 2, height() - 80)
+    ]);
+});
+ 
 mouseClick(() => {
     ngUnlockMedal(65022);
-    ngPostScore(10739, rand(0, 9999).toString();
+    ngPostScore(10739, rand(0, 9999).toString());
 });
 ```
 
@@ -74,6 +82,7 @@ ngPostScore(10739, 1234);
 ### Other functions
 
 `ngUsername()`: returns a String with the newgrounds username of the player <br>
+`ngVersion()`: returns a Number with the version of the newgrounds app <br>
 `ngCall(component, parameters?)`: call any component of [Newgrounds.io](http://www.newgrounds.io/help/components/)
 
 ## Special
