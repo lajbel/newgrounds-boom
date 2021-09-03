@@ -63,7 +63,7 @@ ngPostScore(10739, 1234);
 ### Other functions
 
 `ngUsername()`: returns a String with the newgrounds username of the player <br>
-`ngCall(component, parameters?)`: call custom component of [Newgrounds.io](http://www.newgrounds.io/help/components/)
+`ngCall(component, parameters?)`: call any component of [Newgrounds.io](http://www.newgrounds.io/help/components/)
 
 ## Special
 If you create a game using this api, let me know in an issue and I will put the newgrounds link as a demo, thank you!
