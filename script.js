@@ -1,14 +1,23 @@
 import { newgroundsPlugin } from "./newgrounds.js";
 
-const k = kaboom({
+kaboom({
     width: 500,
     height: 500,
-    plugins: [ newgroundsPlugin ],
+    font: "unscii",
+    plugins: [ newgroundsPlugin ]
 });
 
 ngInit("52924:fdddr5yP", "oEZ7GGD79Wht9upZ4HH7Dw==", 1);
 
-ngUnlockMedal(65022);
-ngPostScore(10739, 1234);
+ngUnlockMedal(65025);
 
-console.log(ngUsername());
+add([
+    text("ohhi " + String(ngUsername()), {size: 40, width: 400}),
+    origin("center"),
+    pos(width() / 2, height() / 2)
+]);
+
+mouseClick(() => {
+    ngUnlockMedal(65022);
+    ngPostScore(10739, rand(0, 9999).toString();
+});
