@@ -37,7 +37,7 @@ function newgroundsPlugin(k) {
         ngGetScores(id, user=0, social=0, skip=0, limit=10) {
             if(!k.scoreboards || !k.scoreboards.find(b => b.id == id)) return;
             
-            const board = !k.scoreboards.find(b => b.id == id);
+            const board = k.scoreboards.find(b => b.id == id);
 
             ngCall('ScoreBoard.getScores',  {id:board.id, user, social, skip, limit}, 0);
         },
