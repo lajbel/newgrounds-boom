@@ -83,7 +83,7 @@ ngPostScore(10739, 1234);
 
 `ngUsername()`: returns a String with the newgrounds username of the player <br>
 `ngVersion()`: returns a Number with the version of the newgrounds app <br>
-`ngIsSupport()`: returns a Boolean with the status of newgrounds **Support** player <br>
+`ngIsSupporter()`: returns a Boolean with the status of newgrounds **Support** player <br>
 `ngCall(component, parameters?)`: call any component of [Newgrounds.io](http://www.newgrounds.io/help/components/)
 
 ## Thanks to
