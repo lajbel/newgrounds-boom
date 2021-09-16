@@ -1,4 +1,4 @@
-## Newgrounds Api plugin for Kaboom.js
+## Kaboom Newgrounds API Plugin
 
 With this [Kaboom](https://github.com/replit/kaboom) plugin you can use medals and post scores on [Newgrounds.com](https://newgrounds.com)
 
@@ -83,12 +83,10 @@ ngPostScore(10739, 1234);
 
 `ngUsername()`: returns a String with the newgrounds username of the player <br>
 `ngVersion()`: returns a Number with the version of the newgrounds app <br>
+`ngIsSupport()`: returns a Boolean with the status of newgrounds **Support** player <br>
 `ngCall(component, parameters?)`: call any component of [Newgrounds.io](http://www.newgrounds.io/help/components/)
-
-## Special
-If you create a game using this api, let me know in an issue and I will put the newgrounds link as a demo, thank you!
 
 ## Thanks to
 
 * [Kaboom](https://github.com/replit/kaboom), the way to make games **fun** and **fast** <br>
-* [KilledByAPixel Newgrounds.io Wrapper](https://github.com/KilledByAPixel/newgrounds) 
+* [JS Wrapper NG.io (rv)](https://github.com/lajbel/newgrounds-reversion), library for use ng.io functions in js

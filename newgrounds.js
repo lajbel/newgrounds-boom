@@ -53,6 +53,12 @@ function newgroundsPlugin(k) {
 
             return version?.result?.data?.current_version;
         },
+
+        ngIsSupporter() {
+            const session = ngCall('App.checkSession');
+
+            return session?.result?.data?.session?.user?.supporter;
+        }
     
         ngCall(component, parameters=0, async=1) {
             const call = ngEncryptCall({component, parameters});
