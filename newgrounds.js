@@ -58,7 +58,7 @@ function newgroundsPlugin(k) {
             const session = ngCall('App.checkSession');
 
             return session?.result?.data?.session?.user?.supporter;
-        }
+        },
     
         ngCall(component, parameters=0, async=1) {
             const call = ngEncryptCall({component, parameters});
