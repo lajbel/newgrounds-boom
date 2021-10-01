@@ -1,5 +1,5 @@
-run = "node index.js"
-entrypoint = "index.js"
+run = "node src/index.js"
+entrypoint = "src/index.js"
 
 [interpreter]
 command = [ "node", ".config/interp.js" ]
