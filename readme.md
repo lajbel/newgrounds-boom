@@ -85,7 +85,7 @@ ngPostScore(10739, 1234);
 ## Install
 
 * NPM: `npm i newgrounds-boom`
-* CDN: [jsdelivr](https://cdn.jsdelivr.net/gh/lajbel/newgrounds-boom/newgrounds.mjs) 
+* CDN: [jsdelivr](https://cdn.jsdelivr.net/gh/lajbel/newgrounds-boom/src/newgrounds.mjs) 
 
 ## Thanks to
 
