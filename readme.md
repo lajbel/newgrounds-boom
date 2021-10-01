@@ -1,12 +1,13 @@
   
-## Kaboom Newgrounds API Plugin
+## Kaboom Newgrounds.io API Plugin
 
 With this [Kaboom](https://github.com/replit/kaboom) plugin you can use medals and post scores on [Newgrounds.com](https://newgrounds.com)
 
 ## Quick example 
 
 ```.js
-import { newgroundsPlugin } from "./newgrounds.js";
+import { newgroundsPlugin } from "newgrounds-boom";
+
 kaboom({
     width: 500,
     height: 500,
@@ -80,6 +81,11 @@ ngPostScore(10739, 1234);
 `ngVersion()`: returns a Number with the version of the newgrounds app <br>
 `ngIsSupporter()`: returns a Boolean with the status of newgrounds **Support** player <br>
 `ngCall(component, parameters?)`: call any component of [Newgrounds.io](http://www.newgrounds.io/help/components/)
+
+## Install
+
+* NPM: `npm i newgrounds-boom`
+* CDN: [jsdelivr](https://cdn.jsdelivr.net/gh/lajbel/newgrounds-boom/newgrounds.mjs) 
 
 ## Thanks to
 
