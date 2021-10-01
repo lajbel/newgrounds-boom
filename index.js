@@ -104,4 +104,4 @@ function newgroundsPlugin(k) {
     return newgrounds;
 };
 
-export { newgroundsPlugin };
+module.exports = { newgroundsPlugin };

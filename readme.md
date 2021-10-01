@@ -1,3 +1,4 @@
+  
 ## Kaboom Newgrounds API Plugin
 
 With this [Kaboom](https://github.com/replit/kaboom) plugin you can use medals and post scores on [Newgrounds.com](https://newgrounds.com)
@@ -6,24 +7,19 @@ With this [Kaboom](https://github.com/replit/kaboom) plugin you can use medals a
 
 ```.js
 import { newgroundsPlugin } from "./newgrounds.js";
-
 kaboom({
     width: 500,
     height: 500,
     font: "unscii",
     plugins: [ newgroundsPlugin ]
 });
-
 ngInit("52924:fdddr5yP", "oEZ7GGD79Wht9upZ4HH7Dw==", 1);
-
 ngUnlockMedal(65025);
-
 add([
     text("ohhi " + String(ngUsername()), {size: 40, width: 400}),
     origin("center"),
     pos(width() / 2, height() / 2)
 ]);
-
 keyPress("space", () => {
     add([
         text(String(ngVersion()), {size: 30}),
@@ -52,7 +48,6 @@ Before using the newgrounds features, you'll need to connect your game, use `ngI
 Using the credentials of this game, it would be like this:
 ```.js
 ngInit("52924:fdddr5yP", "oEZ7GGD79Wht9upZ4HH7Dw==");
-
 ```
 
 ### Unlock Medals 

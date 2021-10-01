@@ -1,0 +1,27 @@
+{
+    "name": "newgrounds-boom",
+    "version": "1.0.0",
+    "description": "🎖️ Newgrounds.io Kaboom plugin",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lajbel/newgrounds-boom.git"
+    },
+    "keywords": [
+        "kaboom",
+        "kaboomjs",
+        "newgrounds",
+        "ngio",
+        "plugin",
+        "api"
+    ],
+    "author": "LaJBel",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/lajbel/newgrounds-boom/issues"
+    },
+    "homepage": "https://github.com/lajbel/newgrounds-boom#readme"
+}

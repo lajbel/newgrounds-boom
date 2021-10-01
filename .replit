@@ -1,0 +1,19 @@
+run = "node index.js"
+entrypoint = "index.js"
+
+[interpreter]
+command = [ "node", ".config/interp.js" ]
+
+[packager]
+language = "nodejs"
+
+[packager.features]
+packageSearch = true
+guessImports = true
+
+[languages.javascript]
+pattern = "**/*.js"
+staynx = "javascript"
+
+[languages.javascript.languageServer]
+start = [ "typescript-language-server", "--stdio" ]
