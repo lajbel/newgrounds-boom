@@ -14,13 +14,16 @@ kaboom({
     font: "unscii",
     plugins: [ newgroundsPlugin ]
 });
+
 ngInit("52924:fdddr5yP", "oEZ7GGD79Wht9upZ4HH7Dw==", 1);
 ngUnlockMedal(65025);
+
 add([
     text("ohhi " + String(ngUsername()), {size: 40, width: 400}),
     origin("center"),
     pos(width() / 2, height() / 2)
 ]);
+
 keyPress("space", () => {
     add([
         text(String(ngVersion()), {size: 30}),
@@ -80,14 +83,17 @@ ngPostScore(10739, 1234);
 `ngUsername()`: returns a String with the newgrounds username of the player <br>
 `ngVersion()`: returns a Number with the version of the newgrounds app <br>
 `ngIsSupporter()`: returns a Boolean with the status of newgrounds **Support** player <br>
+`ngGetScores(id, user?, social?, skip?, limit?)`: returns a Object with info of the scoreboard 
 `ngCall(component, parameters?)`: call any component of [Newgrounds.io](http://www.newgrounds.io/help/components/)
 
 ## Install
 
 * NPM: `npm i newgrounds-boom`
-* CDN: [jsdelivr](https://cdn.jsdelivr.net/gh/lajbel/newgrounds-boom/src/newgrounds.mjs) 
+* CDN: [jsdelivr](https://cdn.jsdelivr.net/gh/lajbel/newgrounds-boom/src/newgrounds.mjs) or [unpkg](https://unpkg.com/newgrounds-boom@latest/src/newgrounds.mjs)
+* Kaboom-Util: `npm i kaboom-util` -> `import { newgroundsPlugin } from "kaboom-util";`
 
 ## Thanks to
 
 * [Kaboom](https://github.com/replit/kaboom), the way to make games **fun** and **fast** <br>
+* [Newgrounds.io](https://newgrounds.io)
 * [JS Wrapper NG.io (rv)](https://github.com/lajbel/newgrounds-reversion), library for use ng.io functions in js
