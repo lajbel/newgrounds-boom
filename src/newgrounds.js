@@ -34,12 +34,13 @@ function newgroundsPlugin(k) {
             ngCall('ScoreBoard.postScore', {id:board.id, value});
         },
 
-        ngGetScores(id, user=0, social=0, skip=0, limit=10) {
+        ngGetScores(id, user=0, period="A", social=0, skip=0, limit=10) {
             if(!k.scoreboards || !k.scoreboards.find(b => b.id == id)) return;
             
             const board = k.scoreboards.find(b => b.id == id);
+            const scores = ngCall('ScoreBoard.getScores',  {id:board.id, user, period, social, skip, limit}, 0);
 
-            ngCall('ScoreBoard.getScores',  {id:board.id, user, social, skip, limit}, 0);
+            return scores.result?.data?.scores;
         },
 
         ngUsername() {
