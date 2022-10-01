@@ -1,17 +1,15 @@
-  
 ## Kaboom Newgrounds.io API Plugin
 
 With this [Kaboom](https://github.com/replit/kaboom) plugin you can use medals and post scores on [Newgrounds.com](https://newgrounds.com)
 
-## Quick example 
+## Quick example
 
 ```.js
-import { newgroundsPlugin } from "newgrounds-boom";
+import newgroundsPlugin from "newgrounds-boom";
 
 kaboom({
     width: 500,
     height: 500,
-    font: "unscii",
     plugins: [ newgroundsPlugin ]
 });
 
@@ -24,21 +22,21 @@ add([
     pos(width() / 2, height() / 2)
 ]);
 
-keyPress("space", () => {
+onKeyPress("space", () => {
     add([
         text(String(ngVersion()), {size: 30}),
         origin("center"),
         pos(width() / 2, height() - 80)
     ]);
 });
- 
-mouseClick(() => {
+
+onMouseDown(() => {
     ngUnlockMedal(65022);
     ngPostScore(10739, rand(0, 9999).toString());
 });
 ```
 
-## How to use 
+## How to use
 
 ### Init
 
@@ -48,13 +46,13 @@ In your project, activate the "api tools" and you will see the following credent
 
 Before using the newgrounds features, you'll need to connect your game, use `ngInit("App ID", "Encryption Key")`. You can activate the debug mode, which will return the results by console (cool if you have not yet published your game), use `ngInit("App ID", "Encryption Key", 1);`
 
-
 Using the credentials of this game, it would be like this:
+
 ```.js
 ngInit("52924:fdddr5yP", "oEZ7GGD79Wht9upZ4HH7Dw==");
 ```
 
-### Unlock Medals 
+### Unlock Medals
 
 Once you have done the previous step, you can use the scores and medals. Let's see the medals, for that you must first have a medal, duh
 
@@ -83,17 +81,9 @@ ngPostScore(10739, 1234);
 `ngUsername()`: returns a String with the newgrounds username of the player <br>
 `ngVersion()`: returns a Number with the version of the newgrounds app <br>
 `ngIsSupporter()`: returns a Boolean with the status of newgrounds **Support** player <br>
-`ngGetScores(id, user?, social?, skip?, limit?)`: returns a Object with info of the scoreboard 
-`ngCall(component, parameters?)`: call any component of [Newgrounds.io](http://www.newgrounds.io/help/components/)
 
 ## Install
 
-* NPM: `npm i newgrounds-boom`
-* CDN: [jsdelivr](https://cdn.jsdelivr.net/gh/lajbel/newgrounds-boom/src/newgrounds.mjs) or [unpkg](https://unpkg.com/newgrounds-boom@latest/src/newgrounds.mjs)
-* Kaboom-Util: `npm i kaboom-util` -> `import { newgroundsPlugin } from "kaboom-util";`
-
-## Thanks to
-
-* [Kaboom](https://github.com/replit/kaboom), the way to make games **fun** and **fast** <br>
-* [Newgrounds.io](https://newgrounds.io)
-* [JS Wrapper NG.io (rv)](https://github.com/lajbel/newgrounds-reversion), library for use ng.io functions in js
+-   NPM: `npm i newgrounds-boom`
+-   CDN: [jsdelivr](https://cdn.jsdelivr.net/gh/lajbel/newgrounds-boom/src/newgrounds.mjs) or [unpkg](https://unpkg.com/newgrounds-boom@latest/src/newgrounds.mjs)
+-   Kaboom-Util: `npm i kaboom-util` -> `import { newgroundsPlugin } from "kaboom-util";`
