@@ -1,10 +1,18 @@
 {
     "name": "newgrounds-boom",
-    "version": "2.0.0-demo-0",
+    "version": "2.0.0-demo-1",
     "description": "Newgrounds.io plugin for Kaboom",
+    "type": "module",
     "main": "./dist/newgrounds.cjs",
     "module": "./dist/newgrounds.mjs",
     "types": "./dist/types.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/newgrounds.mjs",
+            "require": "./dist/newgrounds.cjs"
+        },
+        "./global": "./dist/newgrounds.js"
+    },
     "typesVersions": {
         "*": {
             "global": [

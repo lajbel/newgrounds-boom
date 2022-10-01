@@ -186,4 +186,5 @@ function buildTypes() {
 
     writeFile(`${distDir}/types.d.ts`, dts);
     writeFile(`${distDir}/global.d.ts`, globalDts);
+    writeFile(`${distDir}/global.js`, "");
 }
