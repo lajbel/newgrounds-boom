@@ -1,3 +1,7 @@
+import { KaboomCtx } from "kaboom";
+
+declare function newgroundsPlugin(k: KaboomCtx): NewgroundsPlugin;
+
 export interface NewgroundsPlugin {
     /** Connect to Newgrounds.io */
     ngConnect(
@@ -29,3 +33,5 @@ export interface NewgroundsPlugin {
     /** Check if user is a Newgrounds Supporter */
     ngIsSupporter(): boolean;
 }
+
+export default newgroundsPlugin;

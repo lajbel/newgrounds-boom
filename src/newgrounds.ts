@@ -1,6 +1,6 @@
 import { KaboomCtx } from "kaboom";
-import ng from "newgrounds.js";
 import { NewgroundsPlugin } from "./types";
+import ng from "newgrounds.js";
 
 export function newgroundsPlugin(k: KaboomCtx): NewgroundsPlugin {
     return {
@@ -24,3 +24,5 @@ export function newgroundsPlugin(k: KaboomCtx): NewgroundsPlugin {
         },
     };
 }
+
+export default newgroundsPlugin;
