@@ -6,7 +6,7 @@ export interface NewgroundsPlugin {
     /** Connect to Newgrounds.io */
     ngConnect(
         /** ID of app, check API TOOLS */
-        id: number,
+        id: string,
         /** Cipher code of app, check API TOOLS */
         cipher: string
     ): void;
