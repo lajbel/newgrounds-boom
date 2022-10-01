@@ -1,27 +1,49 @@
 {
     "name": "newgrounds-boom",
-    "version": "1.1.1",
+    "version": "2.0.0-beta",
     "description": "Newgrounds.io plugin for Kaboom",
-    "main": "src/newgrounds.js",
+    "main": "./dist/newgrounds.cjs",
+    "module": "./dist/newgrounds.mjs",
+    "types": "./dist/types.d.ts",
+    "typesVersions": {
+        "*": {
+            "global": [
+                "./dist/global.d.ts"
+            ]
+        }
+    },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "node scripts/build.js"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/lajbel/newgrounds-boom.git"
     },
+    "files": [
+        "dist/",
+        "src/",
+        "README.md"
+    ],
     "keywords": [
         "kaboom",
         "kaboomjs",
         "newgrounds",
-        "ngio",
+        "newgrounds.io",
         "plugin",
         "api"
     ],
-    "author": "LaJBel",
+    "author": "lajbel<lajbelms@gmail.com>",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/lajbel/newgrounds-boom/issues"
     },
-    "homepage": "https://github.com/lajbel/newgrounds-boom#readme"
+    "homepage": "https://github.com/lajbel/newgrounds-boom#readme",
+    "dependencies": {
+        "kaboom": "^2000.2.9",
+        "newgrounds.js": "^3.1.2"
+    },
+    "devDependencies": {
+        "esbuild": "^0.15.10",
+        "typescript": "^4.8.4"
+    }
 }

@@ -1,2 +1,2 @@
-.upm/
-.config/
+node_modules
+dist
