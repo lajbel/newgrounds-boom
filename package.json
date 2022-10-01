@@ -11,7 +11,7 @@
             "import": "./dist/newgrounds.mjs",
             "require": "./dist/newgrounds.cjs"
         },
-        "./global": "./dist/newgrounds.js"
+        "./global": "./dist/global.js"
     },
     "typesVersions": {
         "*": {
