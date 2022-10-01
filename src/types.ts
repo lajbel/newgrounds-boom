@@ -8,7 +8,9 @@ export interface NewgroundsPlugin {
         /** ID of app, check API TOOLS */
         id: string,
         /** Cipher code of app, check API TOOLS */
-        cipher: string
+        cipher: string,
+        /** Active debug console.logs */
+        debug: true
     ): void;
 
     /** Unlock a medal. [Documentation](http://www.newgrounds.io/help/components/#medal-unlock)*/

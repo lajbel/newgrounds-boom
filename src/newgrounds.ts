@@ -4,9 +4,11 @@ import ng from "newgrounds.js";
 
 export function newgroundsPlugin(k: KaboomCtx): NewgroundsPlugin {
     return {
-        ngConnect(id: string, cipher: string) {
+        ngConnect(id: string, cipher: string, debug: boolean) {
             // @ts-ignore
-            ng.connect(id, cipher, 0);
+            ng.connect(id, cipher, {
+                debug,
+            });
         },
         ngUnlockMedal(id: number) {
             ng.unlockMedal(id);

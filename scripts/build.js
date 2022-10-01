@@ -1,7 +1,7 @@
-const fs = require("fs");
-const path = require("path");
-const esbuild = require("esbuild");
-const ts = require("typescript");
+import fs from "fs";
+import path from "path";
+import esbuild from "esbuild";
+import ts from "typescript";
 
 const srcDir = "src";
 const distDir = "dist";
