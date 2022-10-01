@@ -76,6 +76,14 @@ We will use the `ngPostScore("Board ID in Number", "score")` function
 ngPostScore(10739, 1234);
 ```
 
+### Use global types
+
+If you want to load the global types for use as other global Kaboom Functions, you can import from "load"
+
+```js
+import "newgrounds-boom/global";
+```
+
 ### Other functions
 
 `ngUsername()`: returns a String with the newgrounds username of the player <br>
