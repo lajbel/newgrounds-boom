@@ -29,7 +29,7 @@ export interface NewgroundsPlugin {
 
     // INFO
     /** Get the username of player */
-    ngUsername(): string;
+    ngUsername(): Promise<string>;
     /** Get the version of the game defined on API TOOLS */
     ngVersion(): string;
     /** Check if user is a Newgrounds Supporter */

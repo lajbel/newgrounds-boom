@@ -43,7 +43,7 @@ function writeFile(path, content) {
 
 buildTypes();
 
-// generate .d.ts / docs data
+// generate .d.ts / data
 function buildTypes() {
     let dts = fs.readFileSync(`${srcDir}/types.ts`, "utf-8");
 
@@ -125,53 +125,20 @@ function buildTypes() {
     // check if global defs are being generated
     let globalGenerated = false;
 
-    // window attribs to overwrite
-    const overwrites = new Set(["origin", "focus"]);
-
-    // contain the type data for doc gen
-    const types = {};
-    const sections = [];
-
     // generate global decls for NewgroundsPlugin members
     let globalDts = "";
 
-    globalDts += `//@ts-ignore\n import { NewgroundsPlugin } from "newgrounds-boom"\n`;
+    globalDts += `//@ts-ignore\nimport { NewgroundsPlugin } from "newgrounds-boom"\n`;
     globalDts += "declare global {\n";
 
     for (const stmt of stmts) {
-        if (!types[stmt.name]) {
-            types[stmt.name] = [];
-        }
-
-        types[stmt.name].push(stmt);
-
         if (stmt.name === "NewgroundsPlugin") {
             if (stmt.kind !== "InterfaceDeclaration") {
                 throw new Error("NewgroundsPlugin must be an interface.");
             }
 
             for (const name in stmt.members) {
-                const mem = stmt.members[name];
-
-                if (overwrites.has(name)) {
-                    globalDts += "\t// @ts-ignore\n";
-                }
-
                 globalDts += `\tconst ${name}: NewgroundsPlugin["${name}"]\n`;
-
-                const tags = mem[0].jsDoc?.tags ?? {};
-
-                if (tags["section"]) {
-                    const name = tags["section"][0];
-                    const docPath = path.resolve(`doc/sections/${name}.md`);
-                    sections.push({
-                        name: name,
-                        entries: [],
-                        doc: fs.existsSync(docPath)
-                            ? fs.readFileSync(docPath, "utf8")
-                            : null,
-                    });
-                }
             }
 
             globalGenerated = true;

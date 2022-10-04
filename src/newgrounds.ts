@@ -16,7 +16,7 @@ export function newgroundsPlugin(k: KaboomCtx): NewgroundsPlugin {
         ngPostScore(id: number, value: number) {
             ng.postScore(id, value);
         },
-        ngUsername() {
+        async ngUsername() {
             return ng.getUsername();
         },
         ngVersion() {

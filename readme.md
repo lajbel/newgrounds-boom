@@ -1,4 +1,4 @@
-## Kaboom Newgrounds.io API Plugin
+# Kaboom x Newgrounds.io
 
 With this [Kaboom](https://github.com/replit/kaboom) plugin you can use medals and post scores on [Newgrounds.com](https://newgrounds.com)
 
